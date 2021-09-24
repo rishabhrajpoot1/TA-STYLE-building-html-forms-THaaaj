@@ -1,0 +1,159 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* My reset */
+*,
+*::after,
+*::before{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+
+/* general */
+ body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+/* container */
+.container{
+	max-width: 1320px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 32px;
+}
+.flex{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.flex-48{
+	flex:0 1 48%
+}
+main{
+	height: 100vh;
+	background-size: cover;
+	background: url(../media/bg-intro-desktop.jpeg) no-repeat, linear-gradient(rgb(255,121,120),rgb(255,121,120));
+	display: flex;
+	align-items: center;
+}
+.intro-text{
+	padding-right: 42px;
+}
+.heading{
+	font-size: 56px;
+	color: white;
+	font-weight: 700;
+}
+.text{
+	font-size: 18px;
+	color: white;
+	margin-top: 24px;
+}
+.btn{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	padding: 16px 24px;
+	color: white;
+	border-radius: 6px;
+	box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+}
+.btn-strong{
+	font-weight: 700px;
+}
+.btn-primary{
+	margin-bottom: 32px;
+	background-color: rgb(93,84,163);
+	font-weight: 350;
+	box-shadow: 0 8px 0 rgba(0,0,0,0.2);
+}
+form{
+	background-color: white;
+	padding: 32px;
+	border-radius: 8px;
+}
+.form-control{
+	display: inline-block;
+	width: 100%;
+	padding: 16px 24px;
+	margin-bottom: 16px;
+	border: 1px solid gray;
+	border-radius: 8px;
+	font-size: 18px;
+}
+.form-control:focus{
+	border-color: rgb(110,105,133);
+}
+.btn-secondary{
+	background-color: rgb(55,204,137);
+	box-shadow: none;
+	border: 0;
+	font-size: 18px;
+	text-transform: uppercase;
+	border-bottom: 4px solid rgba(0,0,0,0.2);
+	letter-spacing: 1px;
+}
+form p {
+	text-align: center;
+	color: rgb(201,199,211);
+	font-size: 14px;
+	margin-top: 12px;
+}
+form p a{
+	color: rgb(239,131,138);
+	font-weight: 600;
+	margin-left: 6px;
+}
